@@ -1,0 +1,5 @@
+# Optional metadata for OpenAI hosts (Codex / ChatGPT).
+interface:
+  display_name: "Kreations Design Kit"
+  short_description: "An art director for sites, tools, documents and decks"
+  default_prompt: "Use $kreations-design-kit to design this: "
