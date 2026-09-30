@@ -94,14 +94,14 @@ Transitions are fine when they serve the deck. **Every deck must read perfectly 
 | Context | Transitions | Builds (items appearing) |
 |---|---|---|
 | **Professional** (client, report, proposal) | None, or one quiet **Fade** used on every slide | Only to reveal steps of an argument or a chart in order. Fade or Appear |
-| **Pitch** | Calm (Fade or none) on most slides, plus **1–2 moments**: a **Morph** into the big reveal or into the ask | A few, on the key slides only |
-| **Creative / launch / portfolio** | Livelier: **Morph** between related slides (an object growing, moving or recolouring), **Push** or **Wipe** into dividers | Playful but purposeful: items arriving in order, a pop on a divider |
+| **Pitch** | A real motion pass: one object or shape carried through the deck with **Morph** between slides, Fade elsewhere | Automatic entrance builds (after previous, short staggers) on most slides |
+| **Creative / launch / portfolio** | A real motion pass: **Morph** between related slides (an object growing, moving or recolouring), **Push** or **Wipe** into dividers | Automatic, playful but purposeful: items arriving in order, a pop on a divider |
 | **Talk** | Fade or none | Builds for each step, so the audience reads with the speaker |
 
 - **Morph is the best "wow" move** that still looks professional: keep the same object on two slides (same name), change its size, position or colour, and set Morph on the second slide. Name matched objects with a leading `!!` (e.g. `!!hero`) so PowerPoint pairs them reliably.
 - **Never:** spinning or flying text, bounce, "vortex", "curtains", random transitions, or a different transition on every slide. Keep durations short (about 0.4–0.8s; Morph up to about 1.2s).
 - **Creative decks shouldn't be fully static;** professional decks shouldn't feel animated.
-- **Tooling:** pptxgenjs can't set transitions or builds. `scripts/pptx_motion.py` in this skill adds them to a finished .pptx (Fade, Push, Wipe, Morph with a Fade fallback, plus click builds by object name). It keeps a slide's existing transitions and animations unless you change them, and refuses to overwrite existing animations without `--replace-timing`. Its Fade, Push, Morph and click builds were checked in real PowerPoint during testing. Morph only plays in PowerPoint (Microsoft 365 / 2019+); Keynote and Google Slides show a simple fallback; LibreOffice renders ignore motion, so **say transitions weren't checked in PowerPoint on this deck** unless they were.
+- **Tooling:** pptxgenjs can't set transitions or builds. `scripts/pptx_motion.py` in this skill adds them to a finished .pptx (Fade, Push, Wipe, Morph with a Fade fallback, plus builds by object name: on click, or automatic with `--auto 250` so items arrive by themselves, the default for pitch and creative decks). It keeps a slide's existing transitions and animations unless you change them, and refuses to overwrite existing animations without `--replace-timing`. Its Fade, Push, Morph and click builds were checked in real PowerPoint during testing. Morph only plays in PowerPoint (Microsoft 365 / 2019+); Keynote and Google Slides show a simple fallback; LibreOffice renders ignore motion, so **say transitions weren't checked in PowerPoint on this deck** unless they were.
 - Keynote users can re-apply Magic Move where Morph was set; Google Slides only keeps simple transitions.
 
 ## 6. Outputs and fonts

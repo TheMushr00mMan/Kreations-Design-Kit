@@ -1,4 +1,6 @@
-# Palette library (reference, not mandatory)
+# Palette library (fallback reference, not a source to pick from)
+
+> **Kit 1.1:** colours come from the brief first (SKILL.md §6). This library is only a fallback when the brief gives nothing to go on, and even then, build your own palette from the field's lean and use these sets as reference. Take a set as it is only occasionally (about 1 fallback in 10), after checking it suits the project. Blue and cobalt are never the default.
 
 About 60 curated palettes, grouped by mood, plus contrast-checked shortlists for 15 kinds of project (below). **Use only when there's no brand colour.** Start from the shortlist for the kind of project (below), or from the mood groups when the ask gives a feel ("warm and moody", "fresh", "bold"). Then **adapt**: shift tones to the business, assign roles (base, ink, accent, surface), fix contrast for text, and usually use 2–3 of the colours, not all. An existing brand always wins. Never mention these names on the site.
 

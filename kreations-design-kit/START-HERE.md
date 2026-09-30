@@ -19,4 +19,4 @@
 ## Make it yours (optional)
 Copy `personal.example.md` to `personal.md` in this folder and fill it in: your name, your usual host, your own rules. The kit reads it first. It wins over the defaults, but not over what you ask for or a client's existing brand. In apps that load only one file (Open WebUI, ChatGPT Projects, system prompts), paste your `personal.md` under SKILL.md.
 
-Made by Karsten Locano · Kreations. Free to use and adapt with credit (CC BY 4.0).
+Made by the owner of Kreations. Free to use and adapt with credit (CC BY 4.0).

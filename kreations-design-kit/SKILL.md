@@ -5,7 +5,7 @@ description: Kreations design taste, an opinionated art director for AI builds. 
 
 # Kreations Design Kit
 
-This skill turns requests for sites, tools, documents and decks into work with a consistent point of view: a clear focal idea, strong scale contrast, one coherent visual world per project, short copy, and motion that serves the page. The taste is Karsten Locano's (Kreations); anyone can use it. It was built from 22 website concepts (clip IDs v01–v22), 11 live sites (n01–n11), a footer-scene recording (n12), 12 slide decks (s01–s12), a curated font and palette library, and many rounds of real test builds and reviews. The live-site references are **situational**: use them when the ask points to their vibe, never as defaults.
+This skill turns requests for sites, tools, documents and decks into work with a consistent point of view: a clear focal idea, strong scale contrast, one coherent visual world per project, short copy, and motion that serves the page. The taste comes from the owner of Kreations; anyone can use it. It was built from 22 website concepts (clip IDs v01–v22), 11 live sites (n01–n11), a footer-scene recording (n12), 12 slide decks (s01–s12), a curated font and palette library, and many rounds of real test builds and reviews. The live-site references are **situational**: use them when the ask points to their vibe, never as defaults.
 
 The taste changes from project to project, so **there is no single house look**. Consistency comes from the principles below, not from reusing one palette, font, headline treatment or layout.
 
@@ -28,6 +28,7 @@ Anything the user states explicitly beats every default here: format, look, colo
   3. Any sites or brands they like (or hate)?
   4. What must be on the page (menu, hours, ordering, socials…), and what should never be there?
   5. How loud: calm & clean, or bold & busy?
+  - *Conditional:* for portfolios and showcases, **what work to show** (a few projects with titles and a line each, or "placeholders for now"). The work is the page; don't build around a guess.
   - *Conditional:* "Who are the customers?" only when the audience would change the design (niche services, business-to-business, a specific product). Usually not for broad local businesses.
   Also offer **2–3 quick style directions to pick from** (e.g. "clean & calm", "dark & edgy", "bright & playful"), described in a line each. Use tap-to-answer options if the host has them.
 - **For the user's own personal projects** ("my portfolio", "a tool for me"): ask 1–2 quick ones (e.g. "any colours or vibe for this one?"), not the full set.
@@ -38,6 +39,12 @@ Anything the user states explicitly beats every default here: format, look, colo
 **Waiting for answers:**
 - **They're there (normal case):** ask and wait. Don't build on guesses. In agent sessions you may do only the work the answers can't change while waiting (project setup, folders, content structure), never the styling.
 - **Clearly unattended** (a scheduled run, "I'll be away", "don't ask, just build"): pick sensible answers, say at the top what you assumed, build, and list your open questions at the end.
+
+## 0.7 Who leads the look
+
+- **Creative, brand-feel briefs** (portfolios, studios, tattoo and fashion, events, personal brands, creative or pitch decks: anything where the *feel* is the point): **your own design instinct leads.** Commit fully to one idea drawn from the name and the feel, and let type, colour, texture, shapes and motion all come from it. This kit's tones, font and palette libraries, moves and home-base references are **suggestions you may ignore**, not rules to satisfy. Be bold and specific rather than correct and safe.
+- **Practical briefs** (tools, calculators, explainers, local services, documents, work decks): the kit's structure and defaults lead, as written below.
+- **Guardrails apply to every brief, always:** ask first when there's no brand (§0.5), never invent facts and mark drafts (§7), stay fully usable with animations off (§4), no sideways scroll on phones and nothing covered (§11), and avoid the clichés in §3.18.
 
 ## 1. Check what you can actually do (per action)
 
@@ -93,11 +100,24 @@ Portfolio and Company are two ends of one spectrum: the ask decides the main str
 10. **Colour carries character.** Don't polish the colour out of a page; a confident palette from the subject beats a safe neutral one.
 11. **Richness follows the brand and the ask, and stays even.** How much goes on the page is set by the business's look and the wording, not by a house level. "Even" means **consistent care, not equal density**: the opening can be the loudest part and reading sections calmer, but no part should look over-built or unfinished next to the rest (a crammed block beside thin sections reads as wrong).
 12. **Shorter words, same rich design.** Cutting copy never means a plainer page: keep type scale, layout, colour and identity. On multi-section pages a new colour block per section is fine and often better: each section should read as its own clear block, even on dark or moody pages, rather than one uniform surface. A colour block or surface shift is usually the best way (they usually work best); strong spacing, rules or type can do it when colour would add bands for their own sake; a **single piece (one-pager, flyer, pitch sheet) stays one cohesive, premium whole**, not a stack of coloured strips or basic banners.
-13. **The opening and the body get equal polish.** A great first screen is not enough: the sections below must flow into each other, show the information clearly and feel as finished as the hero (e.g. a playful, fully readable hero followed by sections whose scroll design fits together and presents the work cleanly).
-14. **The opening never hides the name or title.** Objects and shapes can overlap or cross the headline, but the name stays readable at a glance on desktop and phone.
+13. **The opening and the body get equal polish.** A great first screen is not enough: the sections below must flow into each other (**no hard cut** from the hero into the page: bridge the seam with a colour fade, an overlap, a shape or image crossing it, a curve or a scroll transition), show the information clearly and feel as finished as the hero (e.g. a playful, fully readable hero followed by sections whose scroll design fits together and presents the work cleanly).
+14. **The opening never hides the name or title.** Objects and shapes can overlap or cross the headline, but the name stays readable at a glance on desktop and phone. Photo cards, panels and images must never cover headline words: check the hero at both ~1440px and ~390px.
 15. **Small textures are welcome when they fit:** a dot grid, fine grain, hairline grid or subtle noise can give a page craft, as long as it matches the tone and doesn't make the page look like a template.
-16. **A footer can be a final scene** on brand and story pages (optional, the skill may choose it): an illustration, landscape or collage with the links set on or beside it, plus a small reveal as it arrives (`references/moves.md`). Skip it on tools, documents, short one-pagers and Practical local-business pages, where a neat footer is better.
+16. **A footer can be a final scene** on brand and story pages (optional, the skill may choose it): an illustration, landscape or collage with the links set on or beside it, plus a small reveal as it arrives (`references/moves.md`). It needs a **clear edge**: a distinct colour or contrast step, a horizon line or a shaped boundary, so it reads as its own scene and never washes into the section above. Skip it on tools, documents, short one-pagers and Practical local-business pages, where a neat footer is better.
 17. **Character boosters (optional).** When a page feels thin or lacks detail, add one or two signature moves rather than more sections. For portfolios the proven ones are a **featured-work scroll** (a pinned section that slides smoothly from one project to the next as you scroll, the page colour changing per project, big title on one side and a large work card on the other, with a "02 / 04" counter) and **drifting work rows** (two rows of colourful cards moving in opposite directions, tilting on hover). Never required; the clean full list of work stays.
+17b. **Moves that have landed well in reviews** (use when they fit, never all at once):
+   - **Type that carries the name's feel:** the display face and its treatment *are* the brand (e.g. a blackletter or distressed cut for an edgy studio, a warm rounded face for a bakery), not a neutral font with a theme bolted on.
+   - **Playful, pokeable shapes** with generous hover and press responses on showy pages. Make them **crafted, not basic**: varied, characterful forms with real lighting and material (gloss, clay, chrome, soft shadow), not plain primitives.
+   - **Scroll journeys and timelines** that tell the story in order (an event night, a wedding day, a process).
+   - **A flowing menu or list** that moves or reveals as you browse, instead of a static grid.
+   - **An interactive product:** a 3D object you can turn, recolour or configure.
+   - **A sticky price or total bar on phones** for listings and money tools (§8).
+   - **A footer that's a final scene** (item 16).
+18. **Clichés to avoid** (they make pages read as generic AI output):
+   - **The split hero** (headline on one side, one image on the other). Use another opening by default; use the split only when nothing else makes sense or it's asked for.
+   - **Blue or cobalt as the default accent.** Blue only when the brand, subject or field really calls for it.
+   - **A serif headline with one italic accent word** as a reflex.
+   - **Empty boxes:** blank grey slots, "Project 01" cards with nothing in them, a hero waiting for a photo. See §5.
 
 ## 4. Motion level comes from the wording
 
@@ -116,7 +136,8 @@ Levels blend ("clean but with one wow moment" → Subtle plus one scene). A tone
 
 ## 5. Imagery comes from the wording
 
-- **The user has their own images** → clearly marked **image slots**, sized and styled for the final image, each labelled with what goes there. On phones, the first slot should still show near the top rather than being pushed far below by the heading.
+- **Missing content never looks empty.** Until real photos, projects or products arrive, fill each slot with a **designed stand-in** that fits the page (a code-built graphic, a 3D stand-in, a type or colour composition) plus a small label saying what replaces it. A portfolio with no work supplied gets designed, clearly marked project stand-ins, not blank cards.
+- **The user has their own images** → clearly marked **image slots**, sized and styled for the final image, each labelled with what goes there, and designed (not blank) until the real image arrives. On phones, the first slot should still show near the top rather than being pushed far below by the heading.
 - **"No visuals" / "text only"** → **no images, illustrations or decorative graphics**. Colour fields, colour blocking, rules, type scale and typographic devices are still welcome and expected.
 - **Otherwise** → **build the visuals in code** (gradients, SVG, canvas/WebGL, chrome or 3D shapes, type as image) to suit the subject.
 - **Real products without photos** (candles, bottles, shoes, food): don't draw them flat or try to fake realism in SVG; it reads cheap. The preferred option, when it fits the brand and you can build it here, is a **stylised 3D stand-in** (glossy, softly lit shapes, like a render) inside a clearly marked slot that says to replace it with real photos. Otherwise use an honest marked photo slot. "No visuals" always wins. Light, glow and atmosphere around the product can stay code-built.
@@ -148,7 +169,11 @@ Tones (details in `references/tones.md`):
 - **Make sure the font actually loads.** Embed or self-host it when you can and check it renders. In plain chat, link a free web font with a real fallback stack and say the typography wasn't checked; never call such a file "self-contained", and never invent a font URL.
 - **Editable Office files (decks, Word, Excel) use no-install fonts by default** (Arial, Georgia, Verdana, Trebuchet MS and others common on Windows and Mac), because other machines don't have custom fonts. Work files ("for work", "my job", colleagues will edit it) always do, without asking. For other editable files, ask once before styling whether they want custom fonts, explaining everyone would need them installed; unanswered means no-install fonts. A brand font needs the user's OK the same way. PDFs and websites are unaffected: they carry or load their fonts. Details and pairings: `references/slides.md` §6.
 
-**Palettes:** a brand's colours always win (and a file being rebuilt keeps its own). With no brand colours, use `references/palettes.md`: contrast-checked shortlists for 15 kinds of project (tech, marketing, sales, ops, finance/legal/consulting, health, food, makers, creative, education/nonprofit, events, luxury, real estate, trades, beauty) plus about 60 mood palettes. **Never one option:** shortlist three, with at least one that fits the field and one that stands out; pick by the brief's wording ("trustworthy/classic" → fit, "different/bold/fun" → stand out), otherwise by the field's lean: **fit first with one standout element** for trust-heavy, client-facing work (finance, legal, consulting, clinical health, sales, ops, real estate, trades, schools, luxury, work files), **stand out but still belong** for everything else (creative, marketing, events, food, makers, beauty, tech, nonprofits, fun explainers, personal projects). Pick the best match, not the first listed or the habitual one, and name the other two in your finishing note. Mix by role (base, ink, main, pop) if it helps. Dashboards and tools use the status colours there, always with an icon or label.
+**Colour comes from the ask, unique to each project.** A brand's colours always win (and a file being rebuilt keeps its own). With no brand colours, **derive the colours from the brief itself**: the name, the product, the place, the materials, the feel and the audience. Each project should end up with its own palette, not one from a set.
+- **Fallback only** when the brief gives nothing to go on: build your own palette from what the field usually calls for (`references/palettes.md` describes each field's lean and clichés), using the library as a reference. Only occasionally (roughly 1 fallback in 10) take a library set as it is, and only after checking again that it suits what the site is for.
+- **Blue and cobalt are not defaults.** Use them only when the brand, subject or field calls for them.
+- **Always:** check text contrast. Dashboards and tools keep functional status colours (success, warning, error), always with an icon or label.
+- In your finishing note, say in a line where the colours came from.
 
 **References are cues, not templates.** The clips teach structure, hierarchy, composition, layering, pacing and interaction types. Always change the reference's colours, imagery, subject, fonts (same *character*, different face), copy, names and numbers. Keep the user's own brand if one exists. Name the cue you borrow and why. The only exception: the user explicitly asks for an exact copy (even then, never present the example's brands, people or figures as real). Also avoid looks that read as a copy of a well-known creator or site.
 
@@ -168,7 +193,7 @@ Tones (details in `references/tones.md`):
 
 - **Tools:** the result is the focal point; it opens in a realistic working state (example inputs marked as examples); results are correct, with units and assumptions shown; empty and invalid inputs get a helpful message; state works from the keyboard and with motion off.
 - **Money tools must build trust:** clear options, a total that updates live, a visible breakdown, and no surprises (explain every fee in plain words, e.g. what "travel" covers).
-- **Running total always visible on phones** for calculators, quote builders, money tools and cart/checkout pages: a slim bar pinned to the bottom that hides while the full total section is on screen. Not on a shop's home or browse pages, and not when they ask otherwise.
+- **Running total always visible on phones** for calculators, quote builders, money tools and cart/checkout pages: a slim bar pinned to the bottom that hides while the full total section is on screen. Not on a shop's home or browse pages, and not when they ask otherwise. **Single listings** (a home for sale, a car, one product) get the same idea: a slim pinned bar on phones with the price (or a marked placeholder) and the enquire action.
 - **Variants are chosen, not cycled:** colour worlds, themes or options are shown as visible selectable choices (swatches, chips, tabs), not a single button that cycles blindly.
 - **Result panels match the page.** The result is the focal point through size and position, not extra machinery: simplify the panel's *decoration* to match the rest of the page and its feel (a plain dark total card worked; a result block crammed with bars, ranges and extras next to a sparse page did not). **Never drop what a money tool needs:** the total, the breakdown and plain-language fee explanations stay. Busier only when asked.
 - **Tools just for the user themselves** (small sub-rule, low weight): a bit more personality and fun is welcome; everything else still applies.
@@ -183,8 +208,8 @@ Details: `references/tools-documents.md`.
 - **Decide the deck type first** (client proposal, report, pitch, talk, portfolio, launch, workshop) and whether it's a **presenter deck** (sparse, detail in speaker notes) or a **reading deck** (more text, still structured). Infer it from the ask ("for my talk" vs "to send") or ask in one line.
 - **Professional decks** (client, report, proposal): action titles that state the point, one message per slide, a steady grid and margins, charts with the key number highlighted and a source, the brand's colours or 2–3 colours plus one accent. Still one standout (a strong title slide, a colour-field divider, a big number).
 - **Creative decks:** one visual world repeated on every slide (one motif, 2–4 colours), type doing the heavy lifting, dividers as the loud moments, photos treated to match (duotone or tint).
-- **Motion by context:** professional = none or one quiet fade, builds only to reveal steps; pitch = calm plus 1–2 moments (a Morph into the reveal or the ask); creative = livelier (Morph, Push or Wipe into dividers, playful builds), never spinning or flying text. **Every deck must read fine with no animation** (PDF, print).
-- **Output:** .pptx as the master (Keynote opens it, Google Slides imports it) plus a PDF to send.
+- **Motion by context:** professional and work decks = none or one quiet fade, builds only to reveal steps. **Pitch and creative decks get a real motion pass:** carry one object or shape through the deck and **Morph** it between slides so the deck feels like one moving piece; **automatic entrance builds** (after previous, short staggers) so content arrives without clicks; Push or Wipe into dividers. Never spinning, bouncing or flying text. **Every deck must read fine with no animation** (PDF, print).
+- **Output:** .pptx is the default (unless another format is asked for) as the master (Keynote opens it, Google Slides imports it) plus a PDF to send.
 - **Fonts, decided before styling:** no-install fonts by default (Georgia, Arial, Verdana, Trebuchet MS, Arial Black…) so the deck looks right on any Windows or Mac. Work decks: always, no question. Other decks: ask once whether they want custom fonts (they'd need installing on every machine); only on a yes use Google Fonts faces with a `fonts/` folder and install note. PDF-only decks may use any free font.
 - **Checks:** readable at about 25% size (back of the room), 12pt minimum for everything, contrast on photos and colour fields, no overflowing text, 16:9, no invented numbers, quotes or logos.
 
@@ -218,11 +243,11 @@ Take the cues, never the colours, imagery or copy. Full list of clips: `referenc
 - Free fonts only (or the brand's own) on websites, tools and PDFs, or a designed system stack when web fonts can't load; crisp for professional work; editable Office files use no-install fonts unless custom ones were approved; none from the don't-use list unless it's the established brand font; paid picks only in the reply.
 - No invented business facts; only requested sections; draft bar present if placeholders exist; no placeholders at all in a final version.
 - Money tools: running total visible on phones; result panel as simple as the page, with the total, breakdown and fees kept.
-- Phone width (~390px): no sideways overflow (including rotated or moving strips such as tickers and tilted bands: clip them in a wrapper with `overflow: clip`), nothing hidden behind a fixed nav, the first image slot reasonably high.
+- Phone width (~390px): no sideways overflow (including rotated or moving strips such as tickers and tilted bands: clip them in a wrapper with `overflow: clip`; wide code blocks, tables and diagrams scroll inside their own box or wrap), nothing hidden behind a fixed nav, the first image slot reasonably high.
 - With reduced motion on: everything still clickable and reachable (actually click through it if you can run a browser).
 - Keyboard focus visible; labels ≥12px; readable contrast; the logo or name stays visible in the phone nav.
 - Valid HTML; no dead external dependencies; built output tested if you could build it; print layout checked for documents.
-- Palette (when no brand colours were given): chosen from a shortlist of about three, with the two alternatives named in the finishing note.
+- Colour (when no brand colours were given): derived from the brief, not a default blue and not a library set by habit; split hero and other §3.18 clichés avoided; no empty slots.
 - Decks: fonts decided first (no-install unless approved), rendered and looked at; readable small; no overflow; motion fits the context and the deck reads fine without it (§8.5).
 - A screenshot counts only if you looked at it. Otherwise say "not visually checked".
 
@@ -232,7 +257,7 @@ Full checklist: `references/review-checklist.md`.
 
 **Redesigns and rebuilds also get a short "what changed and why" explainer:** each change, the reason, and what it does for the business or visitor (a list in the reply, or a small document if there are many). People want to hear the thinking.
 
-Say in a line or two what you made (plus any paid font upgrade worth considering, and, when you chose the palette yourself, the two alternatives you didn't pick), which category, tone and motion level you chose (and why, if it wasn't obvious), which brand inputs or answers you used (or what you assumed), which reference cues you borrowed, any placeholders they need to fill in, and what you could or couldn't test.
+Say in a line or two what you made (plus any paid font upgrade worth considering, and where the colours came from), which category, tone and motion level you chose (and why, if it wasn't obvious), which brand inputs or answers you used (or what you assumed), which reference cues you borrowed, any placeholders they need to fill in, and what you could or couldn't test.
 
 ## Reference map (read only if you can read files)
 
@@ -250,7 +275,7 @@ Say in a line or two what you made (plus any paid font upgrade worth considering
 | `references/slides.md` | Any slide deck or presentation: deck types, slide kit, professional rules, creative cues (s01–s12), motion by context, fonts and outputs |
 | `scripts/pptx_motion.py` | Adding transitions (fade, push, wipe, morph) or click builds to a finished .pptx |
 | `references/fonts.md` | Choosing fonts: curated picks by mood, free near-matches, pairings, don't-use list |
-| `references/palettes.md` | No brand colours: shortlists by kind of project (lean, clichés, 4–6 contrast-checked sets each, status colours) plus ~60 mood palettes (`assets/palettes/palettes-swatches.png` shows those) |
+| `references/palettes.md` | Fallback only, when the brief gives no colour cues: field leans and clichés, shortlists by kind of project (lean, clichés, 4–6 contrast-checked sets each, status colours) plus ~60 mood palettes (`assets/palettes/palettes-swatches.png` shows those) |
 | `references/build-and-deliver.md` | Single file vs project, stack, hosting, fonts, file formats |
 | `references/review-checklist.md` | Before handing anything over |
 | `references/examples/clips.md` | You want the evidence behind a cue, the user names a reference ("like v18", "like n09", "like s01"), or the ask matches a situational vibe (edgy, typographic, artsy, product-native) |

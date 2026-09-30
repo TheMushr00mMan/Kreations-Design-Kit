@@ -30,6 +30,8 @@ Also offer 2 or 3 one-line style directions to pick from. Ask fewer questions wh
 - **Big against small:** a huge headline or subject with small, precise labels (labels at least 12px).
 - **One visual world:** type, colour, imagery and controls belong together.
 - **Colour carries character.** "Clean" or "minimal" still needs one standout element.
+- **Avoid the generic AI look:** no split hero (headline on one side, one image on the other) unless nothing else fits or it's asked for; no default blue; no empty grey boxes (give missing photos or projects a designed stand-in with a small label); no hard cut between the hero and the next section.
+- **Creative briefs** (portfolios, studios, tattoo, events, personal brands): commit to one bold idea from the name and feel; let the type carry the name.
 - **Clear sections:** on multi-section pages each section reads as its own block (a colour block works well). A one-pager or flyer stays one cohesive piece.
 - **Even care:** the sections below the opening are as polished as the opening.
 - **Never hide the name or title** behind objects.
@@ -48,7 +50,7 @@ Also offer 2 or 3 one-line style directions to pick from. Ask fewer questions wh
 - Crisp, confident faces for professional work; bubbly or ornamental faces only for playful briefs.
 - Never pick Didot, Helvetica, Futura, Gotham or Proxima Nova (unless the brand already uses one).
 - Give every font a real fallback stack. If you can't check the font loads, say so.
-- No brand colours: choose a palette from the subject and mood, with 2 or 3 main colours, each with a job. Consider three options (at least one that fits the field and one that stands out) and pick the best fit, not the first idea; mention the other two in one line when you finish. Trust-heavy client work (finance, legal, health, work files) leans fit; creative, fun and personal work leans stand out.
+- No brand colours: take the colours from the brief itself (the name, product, place, materials, feel), 2 or 3 main colours, each with a job. Only if the brief gives nothing, build a palette from what the field usually uses. No default blue. Say in one line where the colours came from.
 - Tools with states: blue info, green success, amber caution, orange risk, red failure, grey unknown, always with a label or icon.
 - Editable Office files (Word, PowerPoint, Excel) use fonts every Windows and Mac already has. For work files, always, without asking. For other editable files, ask once before styling whether they want custom fonts (everyone would need them installed); no answer means the built-in fonts.
 
@@ -69,7 +71,7 @@ Also offer 2 or 3 one-line style directions to pick from. Ask fewer questions wh
 - Decide the type (client/report, pitch, creative) and whether it's presented (few words, details in speaker notes) or read (more text, still structured).
 - Professional: titles that state the point, one message per slide, same margins everywhere, charts with the key number highlighted and a source.
 - Creative: one visual world on every slide; dividers are the loud slides.
-- Motion: professional none or fade; pitch calm plus 1–2 moments; creative livelier, never spinning or flying. It must read fine with no animation.
+- Motion: professional none or fade; pitch and creative get a real motion pass (one shape carried through the deck with Morph, text that appears by itself), never spinning or flying. It must read fine with no animation.
 - Fonts: no-install fonts by default (Georgia, Arial, Verdana, Trebuchet MS, Arial Black, Impact) so it works on any Windows or Mac. Work decks always; for others, ask once if they want custom fonts (they'd need installing everywhere).
 - 12pt minimum for everything on a slide.
 - If you can make files: a .pptx plus a PDF. If you can't: a slide-by-slide plan (title, content, visual, speaker notes) plus a complete script they can run. Never claim a file exists.

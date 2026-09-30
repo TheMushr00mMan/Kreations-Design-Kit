@@ -25,7 +25,7 @@ Download the latest release from the **Releases** page on the right. There are t
 | File | Use it for |
 |---|---|
 | `kreations-design-kit.skill` | Claude apps (upload) |
-| `kreations-design-kit-v1.0.0.zip` | Claude Code, Codex, ChatGPT (the skill folder, zipped) |
+| `kreations-design-kit-v1.1.0.zip` | Claude Code, Codex, ChatGPT (the skill folder, zipped) |
 | `kreations-design-kit-lite.md` | Open WebUI, LM Studio and small local models (paste into the system prompt) |
 
 Step-by-step for each app: [INSTALL.md](INSTALL.md).

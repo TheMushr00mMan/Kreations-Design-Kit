@@ -8,13 +8,13 @@ The skill is named **`kreations-design-kit`**. Menus below were checked in Septe
 3. Just ask for a site, tool, document or deck. Claude loads the kit when the request fits.
 
 ## Claude Code
-1. Unzip `kreations-design-kit-v1.0.0.zip` and place the folder at `~/.claude/skills/kreations-design-kit/`, so `SKILL.md` sits directly inside it. For one project only, use `.claude/skills/kreations-design-kit/` in the repo instead.
+1. Unzip `kreations-design-kit-v1.1.0.zip` and place the folder at `~/.claude/skills/kreations-design-kit/`, so `SKILL.md` sits directly inside it. For one project only, use `.claude/skills/kreations-design-kit/` in the repo instead.
 2. It's picked up live. If the skills folder didn't exist when Claude Code started, run `/reload-skills` once.
 3. Use it automatically, or type `/kreations-design-kit`.
 
 ## ChatGPT
 **ChatGPT Work, on the web:**
-- Open **Skills**, upload `kreations-design-kit-v1.0.0.zip`, then type **@** in a chat to pick the kit.
+- Open **Skills**, upload `kreations-design-kit-v1.1.0.zip`, then type **@** in a chat to pick the kit.
 
 **ChatGPT Work, in the desktop app:**
 - The desktop app keeps its own skill list, so install the kit there separately.

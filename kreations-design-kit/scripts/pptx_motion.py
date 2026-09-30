@@ -14,6 +14,8 @@ Transitions: none | fade | morph | push[:l|r|u|d] | wipe[:l|r|u|d]   (optional @
   For morph, give matching objects the same name on both slides, starting with "!!"
   (pptxgenjs: objectName: "!!hero").
 Builds: comma-separated object names (pptxgenjs objectName) that appear on click, in order.
+  Add --auto 250 to make every build play by itself when the slide starts (items 250 ms apart),
+  which is the kit's default for pitch and creative decks.
   Add ":wipe" to a name for a left-to-right wipe instead of the default fade.
   Works on text boxes, shapes, pictures and groups. A slide that already has animations is
   refused unless you pass --replace-timing (its old animations are then replaced).
@@ -56,7 +58,7 @@ def transition_xml(spec):
             f'<mc:Fallback><p:transition spd="med">{inner}</p:transition></mc:Fallback></mc:AlternateContent>')
 
 
-def build_xml(spids):
+def build_xml(spids, auto=0):
     """Main-sequence click builds: each item appears on its own click.
     spids: list of (spid, effect, kind); kind is 'sp', 'pic', 'grp' or 'frame'.
     Only plain shapes/text boxes get a p:bldP entry."""
@@ -67,12 +69,25 @@ def build_xml(spids):
         return n[0]
 
     clicks = []
-    for spid, effect, _kind in spids:
+    autos = []
+    for i, (spid, effect, _kind) in enumerate(spids):
         a, b, c, d = nid(), nid(), nid(), nid()
         if effect == 'wipe':
             preset, sub, filt = 22, 8, 'wipe(left)'
         else:
             preset, sub, filt = 10, 0, 'fade'
+        if auto:
+            autos.append(
+                f'<p:par><p:cTn id="{b}" fill="hold"><p:stCondLst><p:cond delay="{i * auto}"/></p:stCondLst><p:childTnLst>'
+                f'<p:par><p:cTn id="{c}" presetID="{preset}" presetClass="entr" presetSubtype="{sub}" fill="hold" grpId="0" nodeType="afterEffect">'
+                f'<p:stCondLst><p:cond delay="0"/></p:stCondLst><p:childTnLst>'
+                f'<p:set><p:cBhvr><p:cTn id="{d}" dur="1" fill="hold"><p:stCondLst><p:cond delay="0"/></p:stCondLst></p:cTn>'
+                f'<p:tgtEl><p:spTgt spid="{spid}"/></p:tgtEl><p:attrNameLst><p:attrName>style.visibility</p:attrName></p:attrNameLst></p:cBhvr>'
+                f'<p:to><p:strVal val="visible"/></p:to></p:set>'
+                f'<p:animEffect transition="in" filter="{filt}"><p:cBhvr><p:cTn id="{nid()}" dur="500"/>'
+                f'<p:tgtEl><p:spTgt spid="{spid}"/></p:tgtEl></p:cBhvr></p:animEffect>'
+                f'</p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par>')
+            continue
         clicks.append(
             f'<p:par><p:cTn id="{a}" fill="hold"><p:stCondLst><p:cond delay="indefinite"/></p:stCondLst><p:childTnLst>'
             f'<p:par><p:cTn id="{b}" fill="hold"><p:stCondLst><p:cond delay="0"/></p:stCondLst><p:childTnLst>'
@@ -84,6 +99,11 @@ def build_xml(spids):
             f'<p:animEffect transition="in" filter="{filt}"><p:cBhvr><p:cTn id="{nid()}" dur="500"/>'
             f'<p:tgtEl><p:spTgt spid="{spid}"/></p:tgtEl></p:cBhvr></p:animEffect>'
             f'</p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par>')
+    if auto and autos:
+        # one group that starts by itself when the slide begins; items follow each other with a short stagger
+        clicks = ['<p:par><p:cTn id="3" fill="hold"><p:stCondLst><p:cond delay="indefinite"/>'
+                  '<p:cond evt="onBegin" delay="0"><p:tn val="2"/></p:cond></p:stCondLst><p:childTnLst>'
+                  + ''.join(autos) + '</p:childTnLst></p:cTn></p:par>']
     shapes = [sp for sp, _e, kind in spids if kind == 'sp']
     bld = ('<p:bldLst>' + ''.join(f'<p:bldP spid="{sp}" grpId="0" animBg="1"/>' for sp in shapes) + '</p:bldLst>') if shapes else ''
     return ('<p:timing><p:tnLst><p:par><p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot"><p:childTnLst>'
@@ -155,6 +175,7 @@ def main():
     ap.add_argument('--all', default=None, help='transition for every slide (e.g. fade)')
     ap.add_argument('--slide', action='append', default=[], help='N=transition, overrides --all')
     ap.add_argument('--build', action='append', default=[], help='N=name1,name2[:wipe],...')
+    ap.add_argument('--auto', type=int, default=0, metavar='MS', help='builds play by themselves when the slide starts, MS apart (e.g. 250); default is on click')
     ap.add_argument('--replace-timing', action='store_true', help='allow --build to replace animations a slide already has')
     a = ap.parse_args()
 
@@ -204,7 +225,7 @@ def main():
                     if nm not in names:
                         sys.exit(f'slide {num}: no object named "{nm}". Found: {sorted(names)}')
                     items.append((names[nm][0], eff or 'fade', names[nm][1]))
-                timing = build_xml(items)
+                timing = build_xml(items, a.auto)
                 report.append(f'slide {num}: builds {builds[num]}' + (' (replaced existing animations)' if parts['timing'] else ''))
             xml = (xml[:open_end] + ''.join(parts['cSld']) + ''.join(parts['clrMapOvr']) + trans + timing
                    + ''.join(parts['other']) + ''.join(parts['extLst']) + xml[close_start:])
